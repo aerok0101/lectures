@@ -248,6 +248,9 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
   * 데이터가 적을 때는 기존 Convolution 기반 Classifier나 Deep Learning에서나 성능의 차이가 크지 않다. 왜냐하면 데이터로부터 표현할 수 있는 feature가 제한적이기 때문이다. 오히려 DNN의 성능이 좀 더 낮을 수 있다. 하지만, 데이터가 많아질 수록 DNN은 많은 Parameter를 통해 다양한 variation을 커버할 수 있고, 이를 통해 계속해서 성능이 올라간다.
 * DNN의 한계점
   * Layer와 노드를 Deep 하게 쌓으면 쌓을 수록, Parameter의 갯수가 급증한다.
+  * 입력 파라미터 수가 많으면 Layer를 구성하기 전에 데이터에서 Feature를 추출하여 입력값으로 입력할 필요가 있다. Feature 추출을 어떻게 하느냐에 따라 성능이 좌우된다.
+* 의문점
+  * 최적의 Layer수와 노드 수는 어떻게 구할 수 있을까?
 
 #### 2. Convolution (8:02)
 
