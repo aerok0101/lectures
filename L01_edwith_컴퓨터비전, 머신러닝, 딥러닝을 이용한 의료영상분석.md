@@ -255,6 +255,7 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
   * Average (blurring) Filter
   * Normal distributed filter
 * CNN에서는 단순한 parameter가 아니라, 이런 Convolution Filter matrix(Feature Map)의 값을 학습해두고, 추후 이지미를 넣었을 때 학습된 Filter를 통해 Classification을 진행하겠다는 아이디어.
+* 영상을 입력하고 Filtering을 하면 나오는 결과들을 Feature Map이라고 한다.
 
 #### 3. Convolutional Neural Network (CNN) (19:49)
 
