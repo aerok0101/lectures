@@ -273,7 +273,9 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
   * 하나의 노드에 각 채널의 모든 pixel + 1 bias parameter 를 연결하여, 값을 종합하는 과정
   * Fully Connected Node를 여러개 두고, 그 노드를 종합하여 Neural Net 구조로 최종값 도출
 * Convolution, Pooling을 통해 Image 사이즈를 줄여가며 Filter를 사용하고, FCL을 통해 Classification을 한다. 결과와 비교하여 error을 확인한 뒤, back propagation을 통해 Filter를 업데이트 한다. 업데이트 된 Filter를 통해 다시 classification을 하고, back propagation 반복.
-
+* 의문점
+  * Convolution Layer에서 Filter 값들이 학습을 통해 구해져야하는 Weight 값인가?
+  
 #### 4. Advanced CNNs (LeNet, AlexNet, VGG) (10:30)
 
 * LeNet-5: Padding을 안 썼기 때문에 Feature Map의 size가 줄어들기 때문에 channel수 (filter 수)를 늘려주는 방법을 사용함
