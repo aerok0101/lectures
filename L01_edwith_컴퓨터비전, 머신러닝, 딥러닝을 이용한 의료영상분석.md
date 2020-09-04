@@ -277,13 +277,13 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
 #### 4. Advanced CNNs (LeNet, AlexNet, VGG) (10:30)
 
 * LeNet-5: Padding을 안 썼기 때문에 Feature Map의 size가 줄어들기 때문에 channel수 (filter 수)를 늘려주는 방법을 사용함
-  * Input: 32x32x1
+  * Input: 32x32x1 (흑백 영상)
   * 5x5 Filter with No padding => 28x28x  6개 filter
   * 2x2 Average Pooling => 14x14x6
   * 5x5 Filter => 10x10x  16개 filter
   * 2x2 Average Pooling => 5x5x16
   * 120 FC
-  * 84 FC => Softmax output
+  * 84 FC => Softmax output (입력값들을 확률로 바꿔준다)
 * AlexNet
   * Input: 227x227x3 (Color 영상)
   * 11x11x3 Filter with 4 stride => 55x55x96: input 영상이 크기 때문에 stride를 사용해서 feature map size 줄임
@@ -298,6 +298,7 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
   * 3x3 convolution을 2번 연속 사용하면, 5x5를 사용한 것과 같은 효과
     * 하지만, 5x5x3 = 75개 parameter임에 비해서, 3x3x3 x2 = 54개로 param 수가 더 작다.
   * 하지만, FC Layer에서 Parameter수가 많기 때문에 overfitting의 문제가 있을 수 있다.
+  * 입력 데이터의 크기에 따라 적절한 레이어 수를 결정해야한다.
 
 #### 5. Advanced CNNS (ResNet, InceptionNet, DenseNet) (24:00)
 
