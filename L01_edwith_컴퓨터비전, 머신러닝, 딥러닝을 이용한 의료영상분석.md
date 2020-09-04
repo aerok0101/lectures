@@ -365,7 +365,7 @@ Medical Image Analysis는 주로 3D 영상이며, Computer Vision (2D 등)과 Ma
 
 #### 3. Overfitting / Regularization (18:05)
 
-* 
+* Test
 
 #### 4. Transfer Learning (4:44)
 
